@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+    - {fileID: 2800000, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+    totalSpriteSurfaceArea: 17920
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300036, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300038, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300032, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300034, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300028, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300030, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300024, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300026, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300020, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300022, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300018, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300016, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300006, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300004, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300002, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300000, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300014, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300012, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300010, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300008, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300042, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300040, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300018, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300016, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300002, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300000, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300006, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300004, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300010, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300008, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300014, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300012, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300020, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  - {fileID: 21300022, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - GrassTiles_18
+  - GrassTiles_19
+  - GrassTiles_16
+  - GrassTiles_17
+  - GrassTiles_14
+  - GrassTiles_15
+  - GrassTiles_12
+  - GrassTiles_13
+  - GrassTiles_10
+  - GrassTiles_11
+  - GrassTiles_9
+  - GrassTiles_8
+  - GrassTiles_3
+  - GrassTiles_2
+  - GrassTiles_1
+  - GrassTiles_0
+  - GrassTiles_7
+  - GrassTiles_6
+  - GrassTiles_5
+  - GrassTiles_4
+  - GrassTiles_21
+  - GrassTiles_20
+  - ExplosionTileset_9
+  - ExplosionTileset_8
+  - ExplosionTileset_1
+  - ExplosionTileset_0
+  - ExplosionTileset_3
+  - ExplosionTileset_2
+  - ExplosionTileset_5
+  - ExplosionTileset_4
+  - ExplosionTileset_7
+  - ExplosionTileset_6
+  - ExplosionTileset_10
+  - ExplosionTileset_11
+  m_Tag: Atlas
+  m_IsVariant: 0
