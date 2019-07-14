@@ -10,6 +10,7 @@ public class Fireball : MonoBehaviour
     public fireballCaster caster;
     bool collided;
     public Animator animator;
+    public Collider2D collider2D;
     void Start()
     {
         
@@ -23,6 +24,7 @@ public class Fireball : MonoBehaviour
 
     private void OnEnable()
     {
+        collider2D.enabled = true;
         collided = false;
         canDetonate = true;
         animator.SetBool("isFlying", true);
@@ -33,6 +35,7 @@ public class Fireball : MonoBehaviour
 
     public void Detonate()
     {
+        collider2D.enabled = false;
         HitDestructablesInRange();
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GetComponent<Rigidbody2D>().isKinematic = true;
@@ -49,8 +52,9 @@ public class Fireball : MonoBehaviour
 
     private void HitDestructablesInRange()
     {
+        
         Collider2D[] hits = new Collider2D[] { };
-        hits = Physics2D.OverlapCircleAll(transform.position, .7f);
+        hits = Physics2D.OverlapCircleAll(transform.position, .8f);
         foreach (Collider2D hitCollider in hits)
         {
             if (hitCollider.GetComponent<Destructable>())
@@ -70,6 +74,7 @@ public class Fireball : MonoBehaviour
     { 
         if (!collided)
         {
+            collider2D.enabled = false;
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             caster.currentFireball = null;
             canDetonate = false;

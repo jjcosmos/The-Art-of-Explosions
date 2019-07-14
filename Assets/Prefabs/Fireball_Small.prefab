@@ -117,6 +117,7 @@ MonoBehaviour:
   canDetonate: 0
   caster: {fileID: 0}
   animator: {fileID: 1707895405701905688}
+  collider2D: {fileID: 984381706}
 --- !u!50 &984381705
 Rigidbody2D:
   serializedVersion: 4

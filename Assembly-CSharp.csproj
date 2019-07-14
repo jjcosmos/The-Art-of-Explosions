@@ -71,6 +71,7 @@
     <Compile Include="Assets\Parallax_Mover.cs" />
     <Compile Include="Assets\Player_Movement.cs" />
     <Compile Include="Assets\PlayerAnimation.cs" />
+    <Compile Include="Assets\ScrollingFog.cs" />
     <Compile Include="Assets\Torch.cs" />
     <Reference Include="Cinemachine">
       <HintPath>D:/Unity/Personal Projects/The Art of Explosions/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

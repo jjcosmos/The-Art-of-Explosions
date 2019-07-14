@@ -27,6 +27,8 @@ public class Player_Movement : MonoBehaviour
     public bool isGrounded2;             //Check to see if we are grounded
     private Rigidbody2D rigidbody2D;
     public Transform groundCaster;
+    float StartingGravMod;
+    float StartingDragMod;
     private void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -34,6 +36,7 @@ public class Player_Movement : MonoBehaviour
         {
             transform.position = CP_Manager.currentCP_Position;
         }
+        StartingGravMod = rigidbody2D.gravityScale;
     }
     void Update()
     {
@@ -43,6 +46,18 @@ public class Player_Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCaster.position, .18f, 1 << LayerMask.NameToLayer("Floor"));
 
         isGrounded = isGrounded || isGrounded2;
+
+
+        if(!isGrounded && rigidbody2D.velocity.y < 0 && Input.GetButton("Jump"))
+        {
+            rigidbody2D.gravityScale = StartingGravMod * .3f;
+            rigidbody2D.drag = StartingDragMod * 10;
+        }
+        else
+        {
+            rigidbody2D.gravityScale = StartingGravMod;
+            rigidbody2D.drag = StartingDragMod;
+        }
         //If our player hit the jump key, then it's true that we jumped!
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
