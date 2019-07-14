@@ -43,7 +43,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
     - {fileID: 2800000, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
-    totalSpriteSurfaceArea: 17920
+    totalSpriteSurfaceArea: 19968
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -67,8 +67,16 @@ SpriteAtlas:
   - {fileID: 21300012, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
   - {fileID: 21300010, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
   - {fileID: 21300008, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300058, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300056, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300046, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300044, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
   - {fileID: 21300042, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
   - {fileID: 21300040, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300054, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300052, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300050, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
+  - {fileID: 21300048, guid: b308d19b9ff8b844da4ac69e8bd36630, type: 3}
   - {fileID: 21300018, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
   - {fileID: 21300016, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
   - {fileID: 21300002, guid: b7f6d61f85610254eb80bf3365e6eb3e, type: 3}
@@ -102,8 +110,16 @@ SpriteAtlas:
   - GrassTiles_6
   - GrassTiles_5
   - GrassTiles_4
+  - GrassTiles_29
+  - GrassTiles_28
+  - GrassTiles_23
+  - GrassTiles_22
   - GrassTiles_21
   - GrassTiles_20
+  - GrassTiles_27
+  - GrassTiles_26
+  - GrassTiles_25
+  - GrassTiles_24
   - ExplosionTileset_9
   - ExplosionTileset_8
   - ExplosionTileset_1

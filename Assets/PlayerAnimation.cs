@@ -13,6 +13,20 @@ public class PlayerAnimation : MonoBehaviour
     bool falling;
     bool jumping;
     public Player_Movement mover;
+
+
+
+    public void Die()
+    {
+        animator.SetBool("isDead", true);
+        GetComponent<Player_Movement>().enabled = false;
+        GetComponent<fireballCaster>().enabled = false;
+        transform.GetChild(0).gameObject.SetActive(false);
+        GetComponent<Rigidbody2D>().isKinematic = true;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        transform.position = (Vector2)transform.position + new Vector2(0, .4f);
+    }
+
     void Start()
     {
         falling = false;
@@ -21,6 +35,8 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     // Update is called once per frame
+
+
     void Update()
     {
         if(Input.GetAxis("Horizontal") > 0.001)

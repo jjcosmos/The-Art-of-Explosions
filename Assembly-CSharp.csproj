@@ -60,14 +60,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CP_Manager.cs" />
     <Compile Include="Assets\Destructable.cs" />
+    <Compile Include="Assets\FadeScreen.cs" />
     <Compile Include="Assets\Fireball.cs" />
     <Compile Include="Assets\fireballCaster.cs" />
     <Compile Include="Assets\FlameCaster.cs" />
+    <Compile Include="Assets\Killzone.cs" />
     <Compile Include="Assets\parallax_effector.cs" />
     <Compile Include="Assets\Parallax_Mover.cs" />
     <Compile Include="Assets\Player_Movement.cs" />
     <Compile Include="Assets\PlayerAnimation.cs" />
+    <Compile Include="Assets\Torch.cs" />
     <Reference Include="Cinemachine">
       <HintPath>D:/Unity/Personal Projects/The Art of Explosions/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
