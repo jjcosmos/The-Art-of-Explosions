@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1711157378671758009}
   m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,7 @@ MonoBehaviour:
   delayToExtraJumpForce: 0.05
   groundChecker: {fileID: 5861019732391065846}
   isGrounded: 0
+  isGrounded2: 0
   groundCaster: {fileID: 1711157377979246535}
 --- !u!50 &5861019731353518610
 Rigidbody2D:
@@ -172,7 +173,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.1
+  m_LinearDrag: 0.2
   m_AngularDrag: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 0}
@@ -209,8 +210,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.39}
-  m_Size: {x: 0.4, y: 1.03}
+  m_Offset: {x: 0, y: -0.4611835}
+  m_Size: {x: 0.4, y: 0.88763297}
   m_Direction: 0
 --- !u!114 &1711157378671758009
 MonoBehaviour:
@@ -231,9 +232,13 @@ MonoBehaviour:
   fireballArray:
   - {fileID: 0}
   - {fileID: 0}
-  fireballspeed: 2
-  verticalOffset: 0
-  horizontalOffset: 0
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fireballspeed: 6
+  verticalOffset: -0.4
+  horizontalOffset: 0.4
+  virtualCam: {fileID: 0}
 --- !u!1 &5861019732391065847
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5861019732391065847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.981, z: 0}
+  m_LocalPosition: {x: 0, y: -1.129, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5861019731353518611}

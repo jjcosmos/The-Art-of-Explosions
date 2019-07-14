@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class fireballCaster : MonoBehaviour
 {
@@ -14,9 +15,12 @@ public class fireballCaster : MonoBehaviour
     [SerializeField] float fireballspeed;
     [SerializeField] float verticalOffset;
     [SerializeField] float horizontalOffset;
+    [SerializeField] CinemachineVirtualCamera virtualCam;
+    private CinemachineBasicMultiChannelPerlin noise;
 
     void Start()
     {
+        noise = virtualCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         fireballs = new Queue();
         foreach (Fireball fire in fireballArray)
         {
@@ -37,10 +41,36 @@ public class fireballCaster : MonoBehaviour
             }
             else
             {
-                if(currentFireball != null && currentFireball.canDetonate)
+                if (currentFireball != null && currentFireball.canDetonate)
+                {
                     currentFireball.Detonate();
+                    StopAllCoroutines();
+                    StartCoroutine(cameraShake());
+                }
             }
         }
+    }
+
+    IEnumerator cameraShake()
+    {
+        Debug.Log("SHAKE");
+        noise.m_AmplitudeGain = 2;
+        noise.m_FrequencyGain = 1;
+        while(noise.m_AmplitudeGain > 0 && noise.m_FrequencyGain > 0)
+        {
+            if(noise.m_FrequencyGain > 0)
+            {
+                //noise.m_FrequencyGain -= Time.deltaTime;
+            }
+            if (noise.m_AmplitudeGain > 0)
+            {
+                noise.m_AmplitudeGain -= Time.deltaTime * 5f;
+            }
+            yield return null;
+        }
+        noise.m_AmplitudeGain = 0;
+        noise.m_FrequencyGain = 0;
+        yield return null;
     }
 
     private void spawnFireball(bool isFacingRight)

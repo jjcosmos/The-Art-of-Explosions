@@ -6,6 +6,7 @@ public class CP_Manager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static Vector3 currentCP_Position;
+    public static bool loadFromCP;
     public Torch[] CheckPoints;
 
     private void Awake()
@@ -22,6 +23,7 @@ public class CP_Manager : MonoBehaviour
         {
             currentCP_Position = CheckPoints[0].transform.position;
         }
+        else { loadFromCP = true; }
     }
 
     // Update is called once per frame

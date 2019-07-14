@@ -11,6 +11,7 @@ public class Torch : MonoBehaviour
     void Start()
     {
         //CP_Manager.currentCP_Position.position = transform.position;
+        
         animator.SetBool("isTriggered", isTriggered);
         
     }
@@ -18,14 +19,19 @@ public class Torch : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (!isTriggered)
         {
             CP_Manager.currentCP_Position = transform.position;
+            if(!CP_Manager.loadFromCP)
+                SaveUI.setSaveUIFlag();
         }
-
+        CP_Manager.loadFromCP = false;
         Debug.Log("Checkpoint");
         isTriggered = true;
         animator.SetBool("isTriggered", isTriggered);
+
+        
         
     }
 }
